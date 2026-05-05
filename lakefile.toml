@@ -1,0 +1,21 @@
+name = "voting-theory"
+version = "0.1.0"
+defaultTargets = ["voting-theory"]
+
+[leanOptions]
+pp.unicode.fun = true
+relaxedAutoImplicit = false
+weak.linter.mathlibStandardSet = true
+maxSynthPendingDepth = 3
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.29.1"
+
+[[lean_lib]]
+name = "VotingTheory"
+
+[[lean_exe]]
+name = "voting-theory"
+root = "Main"
